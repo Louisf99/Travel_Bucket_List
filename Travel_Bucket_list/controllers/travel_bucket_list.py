@@ -1,5 +1,5 @@
-from flask import Flask, render_template, request, redirect
-from models.country import Country
+from flask import Flask, render_template, redirect, request
 from flask import Blueprint
-from repositories import country_repository, user_repository
-tasks_blueprint = Blueprint("countries", __name__)
+from models.city import City
+import repositories.city_repository as city_repository
+import repositories.country_repository as country_repository
