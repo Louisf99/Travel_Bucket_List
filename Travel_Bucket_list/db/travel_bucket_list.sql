@@ -10,9 +10,8 @@ CREATE TABLE countries (
 );
 
 CREATE TABLE cities (
-  CREATE TABLE cities (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
-    country_id INT REFERENCES countries(id),
-    visited BOOLEAN
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255),
+  country_id INT REFERENCES countries(id),
+  visited BOOLEAN
 );
