@@ -3,3 +3,5 @@ from flask import Blueprint
 from models.city import City
 import repositories.city_repository as city_repository
 import repositories.country_repository as country_repository
+
+planner_blueprint = Blueprint("planner", __name__)

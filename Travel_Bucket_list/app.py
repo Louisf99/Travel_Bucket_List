@@ -1,8 +1,8 @@
 from flask import Flask, blueprints, render_template
-from controllers.travel_bucket_list import tasks_blueprint
-from repositories import country_repository
+from controllers.travel_bucket_list import planner_blueprint
+from repositories import city_repository, country_repository
 app = Flask(__name__)
-app.register_blueprint(tasks_blueprint)
+app.register_blueprint(planner_blueprint)
 
 
 @app.route('/')
