@@ -7,5 +7,3 @@ class City:
 
     def check_visited_(self):
         self.visited = True
-
-    
