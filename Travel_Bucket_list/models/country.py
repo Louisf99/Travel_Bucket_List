@@ -9,4 +9,5 @@ class Country:
         self.visited = visited
         self.id = id
         
-
+    def check_visited(self):
+        self.completed = True
