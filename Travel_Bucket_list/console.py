@@ -42,7 +42,7 @@ city_repository.save(city2)
 # Test UPDATE
 
 # Test DELETE
-city_repository.delete(1)
+# city_repository.delete(1)
 
 
 
