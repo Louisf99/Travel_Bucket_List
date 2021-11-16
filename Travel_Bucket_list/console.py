@@ -18,9 +18,6 @@ country_repository.save(country3)
 country4 = Country("France", 67000000, "Euro", "French")
 country_repository.save(country4)
 
-country3.language = "French"
-country_repository.update(country3)
-
 
 # Test City repo fucntionality
 
