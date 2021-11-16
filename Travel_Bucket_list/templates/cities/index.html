@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>All destinations</h2>
+
+{% for city in cities %}
+<div class="all_cities">
+    <div class="content">
+      <h3>City Name: </h3> <p>{{city.name}}</p>
+      <h3>Country Name: </h3><p>{{city.country.name}}</p>
+      <h3>Country Population</h3><p>{{city.country.population}}</p>
+      <h3>National Currency</h3><p>{{city.country.currency}}</p>
+      <h3>National Language</h3> <p>{{city.country.language}}</p>
+      <h3>Have you ever visted?</h3><p>{{city.visited}}</p>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

@@ -5,12 +5,11 @@ from models.country import Country
 import repositories.city_repository as city_repository
 import repositories.country_repository as country_repository
 
-destination_blueprint = Blueprint("destinations", __name__)
+cities_blueprint = Blueprint("cities", __name__)
 
 
-@destination_blueprint.route('/destinations')
+@cities_blueprint.route('/cities', methods=['GET'])
 def destinations():
-    destinations = city_repository.select_all()
-    print(destinations)
-    return render_template("destination/index.html", destinations=destinations)
-    
+    cities = city_repository.select_all()
+    print(cities)
+    return render_template("cities/index.html", cities=cities)
