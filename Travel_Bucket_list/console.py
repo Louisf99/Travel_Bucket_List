@@ -21,8 +21,12 @@ country4 = Country("France", 67000000, "Euro", "French")
 country_repository.save(country4)
 
 # Test READ
+
 # Test UPDATE
+
 # Test DELETE
+
+
 
 # Test City repo fucntionality
 
@@ -39,5 +43,7 @@ city_repository.save(city2)
 
 # Test DELETE
 city_repository.delete(1)
+
+
 
 pdb.set_trace()
