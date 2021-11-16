@@ -53,3 +53,33 @@ def delete(id):
 def delete_all():
     sql = "DELETE  FROM cities"
     run_sql(sql)
+
+# READ function to gather data for all citites visoted and those that hav e not been visted, aka gather all values set to False for Not visted and all True for visited 
+
+# NOT Visited
+def select_all_not_visited():
+    not_visited = []
+
+    sql = "SELECT * FROM cities WHERE visited = %s"
+    values = [False]
+    results = run_sql(sql, values)
+
+    for row in results:
+        country = country_repository.select(row['country_id'])
+        city = City(row['name'], country, row['visited'], row['id'] )
+        not_visited.append(city)
+    return not_visited
+
+# Visited 
+def select_all_visited():
+    visited_cities = []
+
+    sql = "SELECT * FROM cities WHERE visited = %s"
+    values = [True]
+    results = run_sql(sql, values)
+
+    for row in results:
+        country = country_repository.select(row['country_id'])
+        city = City(row['city_name'], country, row['visited'], row['id'] )
+        visited_cities.append(city)
+    return visited_cities
