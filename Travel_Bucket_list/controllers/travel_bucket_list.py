@@ -30,7 +30,7 @@ def delete_city(id):
     return redirect('/cities')
 
 @cities_blueprint.route('/cities/new_destination', methods=['GET'])
-def new_task():
+def new_city():
     countries = country_repository.select_all()
     return render_template('cities/add_city.html', all_countries=countries)
 
