@@ -23,3 +23,8 @@ def visited_cities():
 def not_visited_cities():
     not_visited_cities = city_repository.select_all_not_visited()
     return render_template("/cities/not_visited.html", not_visited_cities = not_visited_cities)
+
+@cities_blueprint.route('/cities/<id>/delete', methods=['POST'])
+def delete_city(id):
+    city_repository.delete(id)
+    return redirect('/cities')
