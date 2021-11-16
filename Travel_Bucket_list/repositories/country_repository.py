@@ -43,9 +43,15 @@ def update(country):
     run_sql(sql, values)
 
 # DELETE individual
+def delete(id):
+    sql = "DELETE  FROM countries WHERE id = %s"
+    values = [id]
+    run_sql(sql, values)
 
 # DELETE All
-
+def delete_all():
+    sql = "DELETE FROM countries"
+    run_sql(sql)
 
 # List of all citites that match country_id
 def cities(country):
