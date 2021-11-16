@@ -18,3 +18,8 @@ def destinations():
 def visited_cities():
     all_visited_cities = city_repository.select_all_visited()
     return render_template("/cities/visited.html", all_visited_cities = all_visited_cities)
+
+@cities_blueprint.route("/cities/not_visited", methods=['GET'])
+def not_visited_cities():
+    not_visited_cities = city_repository.select_all_not_visited()
+    return render_template("/cities/not_visited.html", not_visited_cities = not_visited_cities)
