@@ -3,16 +3,16 @@ from models.country import Country
 from models.city import City
 
 def save(country):
-    sql = "INSERT INTO countries (name) VALUES (%s) RETURNING *"
-    values = [country.name]
+    sql = "INSERT INTO countries (name, population, currency, language ) VALUES (%s, %s, %s, %s) RETURNING *"
+    values = [country.name, country.population, country.currency, country.language]
     results = run_sql(sql, values)
     id = results[0]['id']
     country.id = id
     return country
 
 def update(country):
-    sql = "UPDATE countries SET (name) = (%s) WHERE id = %s"
-    values = [country.name, country.id]
+    sql = "UPDATE countries SET (name, population, currency, language) = (%s, %s, %s, %s) WHERE id = %s"
+    values = [country.name, country.population, country.currency, country.language]
     run_sql(sql, values)
 
 def cities(country):

@@ -18,8 +18,8 @@ country_repository.save(country3)
 country4 = Country("France", 67000000, "Euro", "French")
 country_repository.save(country4)
 
-# country3.language = "French"
-# country_repository.update(country3)
+country3.language = "French"
+country_repository.update(country3)
 
 
 # Test City repo fucntionality
@@ -30,6 +30,6 @@ city_repository.save(city1)
 city2 = City("Edinburgh", country2, True)
 city_repository.save(city2)
 
-# city_repository.delete(1)
+city_repository.delete(1)
 
 pdb.set_trace()
