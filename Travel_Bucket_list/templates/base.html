@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>My Travel BucketList :-)</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/"></a>Homepage</li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/Cities">All visited and not visted</a></li>
+                <li><a href="/cities/visted">Visted cities</a></li>
+                <li><a href="/cities/not_visted">Still to see cities</a></li>
+                <li><a href="/cities/new_destination">add new destination</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>class="container"
     {% block content %}
     
     {% endblock %}
+    </div>
 </body>
 </html>
