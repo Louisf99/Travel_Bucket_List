@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>All destinations</h2>
+<h2>All Destinations</h2>
 <hr>
 <ul class="links">
   <li><a href="/cities/visited">Visted cities</a></li>
@@ -18,17 +18,17 @@
       <h3>Country Population -</h3><p>{{city.country.population}}</p>
       <h3>National Currency -</h3><p>{{city.country.currency}}</p>
       <h3>National Language -</h3> <p>{{city.country.language}}</p>
-      <h3>Have you ever visted?</h3><p>{{city.visited}}</p>
+      <h3>Have you ever visted?</h3><p></p>
 
       {% if city.visited == True %}
-      <i class="fa fa-check fa-2x" style="color:green" aria-hidden="true"></i>
+      <i class="fa fa-check fa-2x" style="color:green" aria-hidden="true">Yes</i>
       {% else %}
-      <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+      <i class="fa fa-times fa-2x" style="color: red" aria-hidden="true">No</i>
       {% endif %}
     
       <form class="delete-form" action="/cities/{{city.id}}/delete" method='post'>
         <button class="trash-button"><i class="fa fa-trash-o fa-3x" 
-        style="color:red" aria-hidden="true"></i></button>
+        style="color:rgb(17, 16, 16)" aria-hidden="true"></i></button>
       </form>
     </div>      
   </div>

@@ -34,9 +34,11 @@ body > header > nav > ul > li > a {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
+  text-size-adjust: 200%;
 } 
 .links > li > a {
   text-decoration: none;
+  
 }
   
 /* Header and nav bar complete */
@@ -58,12 +60,6 @@ body {
     font-family: vintage ;
 }
 
-.Headings {
-    margin: auto;
-    width: 80%;
-    display: flex;
-    color: #104c91;
-}
 
 .home_text{
   color: #104c91;
@@ -98,4 +94,29 @@ body {
   justify-content: space-evenly;
   padding: 5%;
   color:#104c91;
+}
+
+
+
+.Headings {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  color: #104c91;
+}
+
+
+.home_text {
+  margin: auto;
+  width: 80%;
+  
+  color: #104c91;
+}
+
+.globe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    align-items: center; 
+
 }
