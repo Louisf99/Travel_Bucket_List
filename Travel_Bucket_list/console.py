@@ -37,6 +37,12 @@ city_repository.save(city1)
 city2 = City("Edinburgh", country2, True)
 city_repository.save(city2)
 
+city3 = City("Madrid", country3)
+city_repository.save(city3)
+
+city4 = City("Paris", country4, True)
+city_repository.save(city4)
+
 # Test READ
 
 # Test UPDATE
