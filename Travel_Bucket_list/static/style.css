@@ -113,11 +113,21 @@ body {
   
   color: #104c91;
 }
-
+/* .edit_home {
+  display: flex;
+  flex-wrap: wrap ;
+} */
 .globe {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; 
     align-items: center; 
 
+}
+
+.data {
+  padding: 10%;
+}
+.data_country {
+  padding-left: 12%;
 }
