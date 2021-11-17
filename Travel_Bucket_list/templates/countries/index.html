@@ -4,24 +4,30 @@
 <h2>All destinations</h2>
 <hr>
 <p class="country_help">If you click on the Country Name you can Edit/Update the Country -</h3>
-<li><a href="/country/new">Add Country</a></li>
-{% for country in countries %}
-<div class="all_countries">
-    <div class="content">
-      <h3><a href="/country/{{country.id}}">{{country.name}}</a></h3>
-      <h3>Country Population</h3><p>{{country.population}}</p>
-      <h3>National Currency</h3><p>{{country.currency}}</p>
-      <h3>National Language</h3> <p>{{country.language}}</p>
+<ul class="links">
+  <li>
+    <a href="/country/new">Add Country</a>
+  </li>
+</ul>
+<div class="cities_cards">
+    {% for country in countries %}
+      <div class="city_card">
+        <div class="content">
+          <h3><a href="/country/{{country.id}}">{{country.name}}</a></h3>
+          <h3>Country Population</h3><p>{{country.population}}</p>
+          <h3>National Currency</h3><p>{{country.currency}}</p>
+          <h3>National Language</h3> <p>{{country.language}}</p>
     
   
-        <form class="delete-form" action="/country/{{country.id}}/delete" method='post'>
-          <button class="trash-button"><i class="fa fa-trash-o fa-3x" 
-           style="color:red" aria-hidden="true"></i></button>
-        </form>
-      </div>
+    <form class="delete-form" action="/country/{{country.id}}/delete" method='post'>
+      <button class="trash-button"><i class="fa fa-trash-o fa-3x" 
+       style="color:red" aria-hidden="true"></i></button>
+    </form>
+    </div>
        
    
 </div>
 {% endfor %}
+</div>
 
 {% endblock %}

@@ -3,19 +3,19 @@ body {
     font-family: sans-serif;
   }
   
-  body > header {
+body > header {
     padding: 23px;
     display: flex;
     justify-content: space-between;
     background-color: #104c91 ;
   }
   
-  body > header > h1 {
+body > header > h1 {
     padding-left: 100px;
     color: #efc9af;
   }
 
-  body > header > nav > ul {
+body > header > nav > ul {
     margin: 0;
     height: 100%;
     display: flex;
@@ -23,11 +23,21 @@ body {
     list-style: none;
   }
 
-  body > header > nav > ul > li > a {
+body > header > nav > ul > li > a {
     padding-right: 80px;
     color:#efc9af;
     text-decoration: none;
   }
+
+  
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+} 
+.links > li > a {
+  text-decoration: none;
+}
   
 /* Header and nav bar complete */
 h2 {
@@ -45,6 +55,7 @@ h2 {
 
 body {
     background-color: #ffebdd;
+    font-family: vintage ;
 }
 
 .Headings {
@@ -56,19 +67,30 @@ body {
 
 
 
-.content {
-    margin: auto;
-    width: 80%;
-    
-    color: #104c91;
-}
+
 
 .country_help {
   margin: auto;
-    width: 80%;
-    display: flex;
-    color: #104c91;
+  width: 80%;
+  display: flex;
+  color: #104c91;
 }
 
 
+.city_card {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  list-style: none;
+  width: 25%;
 
+  
+}
+
+.cities_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5%;
+}
