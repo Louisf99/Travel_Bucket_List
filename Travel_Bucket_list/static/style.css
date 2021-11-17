@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  body > header {
+    padding: 23px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #104c91 ;
+  }
+  
+  body > header > h1 {
+    padding-left: 100px;
+    color: #efc9af;
+  }
+
+  body > header > nav > ul {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  body > header > nav > ul > li > a {
+    padding-right: 80px;
+    color:#efc9af;
+    text-decoration: none;
+  }
+  
+/* Header and nav bar complete */
+
+.Home {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    color: #104c91;
+}
+
+body {
+    background-color: #ffebdd;
+}
+
+.about {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    color: #104c91;
+}
+
+.content_home {
+    margin: auto;
+    width: 80%;
+    
+    color: #104c91;
+}
+
+.content {
+    margin: auto;
+    width: 80%;
+    
+    color: #104c91;
+}
