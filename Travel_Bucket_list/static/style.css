@@ -34,10 +34,14 @@ body > header > nav > ul > li > a {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  text-size-adjust: 200%;
+  
+ 
+  
 } 
 .links > li > a {
   text-decoration: none;
+  color: #104c91;
+
   
 }
   
