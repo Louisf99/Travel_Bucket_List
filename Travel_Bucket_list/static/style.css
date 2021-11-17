@@ -65,6 +65,10 @@ body {
     color: #104c91;
 }
 
+.home_text{
+  color: #104c91;
+}
+
 
 
 
@@ -82,9 +86,9 @@ body {
   flex-direction: column;
   /* justify-content: space-evenly; */
   list-style: none;
-  width: 25%;
-
-  
+  background-color:#96c9eb;
+  width: 33%;
+  /* margin: auto; */
 }
 
 .cities_cards {
@@ -93,4 +97,5 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 5%;
+  color:#104c91;
 }
