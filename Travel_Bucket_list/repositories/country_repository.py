@@ -39,7 +39,8 @@ def select_all():
 # UPDATE
 def update(country):
     sql = "UPDATE countries SET (name, population, currency, language) = (%s, %s, %s, %s) WHERE id = %s"
-    values = [country.name, country.population, country.currency, country.language]
+    values = [country.name, country.population, country.currency, country.language, country.id]
+    print(values)
     run_sql(sql, values)
 
 # DELETE individual

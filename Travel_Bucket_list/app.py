@@ -1,5 +1,6 @@
 from flask import Flask, blueprints, render_template
 from controllers.travel_bucket_list import cities_blueprint
+from controllers.country_controller import country_blueprint
 from repositories import city_repository, country_repository
 
 app = Flask(__name__)

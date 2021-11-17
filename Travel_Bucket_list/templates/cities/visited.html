@@ -2,7 +2,8 @@
 
 {% block content %}
 <h2>All Cities visited </h2>
-
+<li><a href="/cities/not_visited">Still to visit</a></li>
+<li><a href="/cities/new_destination">Add New Destination</a></li>
 {% for city in all_visited_cities %}
 <div class="all_cities">
     <div class="content">
