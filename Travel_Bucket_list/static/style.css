@@ -63,7 +63,12 @@ body {
     color: #104c91;
 }
 
-
+.country_help {
+  margin: auto;
+    width: 80%;
+    display: flex;
+    color: #104c91;
+}
 
 
 

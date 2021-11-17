@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2">All destinations</h2>
-<h3>If you click onto the Country Name this will let you edit/Update the chosen Country -</h3>
+<h2>All destinations</h2>
+<hr>
+<p class="country_help">If you click on the Country Name you can Edit/Update the Country -</h3>
 <li><a href="/country/new">Add Country</a></li>
 {% for country in countries %}
 <div class="all_countries">
