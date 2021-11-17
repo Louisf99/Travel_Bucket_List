@@ -44,7 +44,6 @@ def show_country(id):
     return render_template('countries/show.html', country=country)
 
 # EDIT
-# GET '/tasks/<id>/edit'
 @country_blueprint.route('/country/<id>/edit', methods=['GET'])
 def edit_country(id):
     country = country_repository.select(id)
@@ -52,7 +51,6 @@ def edit_country(id):
 
 
 # UPDATE
-# POST '/tasks/<id>'
 @country_blueprint.route('/country/<id>/edit', methods=['POST'])
 def update_country(id):
     name = request.form['name']
