@@ -13,7 +13,10 @@
   {% for country in countries %}
     <div class="city_card">
       <div class="content">
+        <ul class="links_edit">
         <h3><a href="/country/{{country.id}}">{{country.name}}</a></h3>
+      </ul>
+    
         <h3>Country Population -</h3><p>{{country.population}}</p>
         <h3>National Currency -</h3><p>{{country.currency}}</p>
         <h3>National Language -</h3> <p>{{country.language}}</p>

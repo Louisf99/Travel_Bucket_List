@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: serif;
   }
   
 body > header {
@@ -34,16 +34,18 @@ body > header > nav > ul > li > a {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  
- 
-  
 } 
+
 .links > li > a {
   text-decoration: none;
   color: #104c91;
-
-  
 }
+
+.links_edit > h3 > a {
+  text-decoration: none;
+  color: #104c91;
+}
+
   
 /* Header and nav bar complete */
 h2 {
@@ -69,17 +71,12 @@ body {
   color: #104c91;
 }
 
-
-
-
-
 .country_help {
   margin: auto;
   width: 80%;
   display: flex;
   color: #104c91;
 }
-
 
 .city_card {
   display: flex;
