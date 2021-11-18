@@ -131,3 +131,11 @@ body {
 .data_country {
   padding-left: 12%;
 }
+
+.forms {
+  
+  justify-content: space-evenly;
+  width: 20%;
+  padding-left: 30%;
+  
+}
