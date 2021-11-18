@@ -10,6 +10,7 @@
 {% for city in not_visited_cities %}
 <div class="city_card">
     <div class="content">
+      <div class="data">
       <h3>City Name:</h3> <p>{{city.name}}</p>
       <h3>Country Name:</h3><p>{{city.country.name}}</p>
       <h3>Country Population:</h3><p>{{city.country.population}}</p>
@@ -22,6 +23,7 @@
       <i class="fa fa-times fa-2x" style="color: red" aria-hidden="true">No</i>
       {% endif %}
     </div>
+</div>
 </div>
 {% endfor %}
 </div>
