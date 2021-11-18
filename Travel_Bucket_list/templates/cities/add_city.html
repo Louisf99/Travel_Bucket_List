@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+<div>
 <form action="/cities" method="post">
     <div>
       <label for="name">City Name:</label>
@@ -17,11 +17,14 @@
     </div>
     <div>
         <label for="country">Country:</label>
+
         <select id="country" name="country_id">
           
         {% for country in all_countries %}
         <option value="{{ country.id }}">{{ country.name }} </option>
         {% endfor %}
+        </div>
+
   </select>
     <button type="submit">Add City</button>
   
