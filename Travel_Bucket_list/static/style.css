@@ -110,13 +110,12 @@ body {
 .home_text {
   margin: auto;
   width: 80%;
-  
+  font-size: 20px;
   color: #104c91;
 }
-/* .edit_home {
-  display: flex;
-  flex-wrap: wrap ;
-} */
+.edit_home {
+  font-size: 23px;
+}
 .globe {
     display: flex;
     flex-direction: column;
